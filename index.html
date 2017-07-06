@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cambio de Imagen</title>
+</head>
+<body>
+	<div>
+		<span id="stars">
+			<img src="img1.jpg" onclick="cambiar()">
+			<img src="img1.jpg" onclick="despues()">
+			<img src="img1.jpg" onclick="antes()">
+</span>
+	</div>
+</body>
+<script>
+	function cambiar() {
+		//alert('hola');
+		document.getElementById('stars').childNodes[1].src = 'img5.jpg';
+		
+	}
+		function despues() {
+		//alert('hola');
+		document.getElementById('stars').childNodes[1].src = 'img4.jpeg';
+		
+	}
+		function antes() {
+		//alert('hola');
+		document.getElementById('stars').childNodes[1].src = 'img6.jpg';
+		
+	}
+</script>
+</html>
